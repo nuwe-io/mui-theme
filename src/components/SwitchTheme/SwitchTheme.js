@@ -47,4 +47,6 @@ SwitchTheme.defaultProps = {
   iconWidth: '30px'
 }
 
+// displayNa
+SwitchTheme.displayName = 'SwitchTheme'
 export default SwitchTheme

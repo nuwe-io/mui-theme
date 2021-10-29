@@ -22,6 +22,8 @@ const SwitchThemeView = ({ iconColor, iconWidth, color, theme, handlerTheme, var
   )
 }
 
+SwitchThemeView.displayName = 'SwitchThemeView'
+
 SwitchThemeView.propTypes = {
   variant: PropTypes.oneOf(['text', 'outlined', 'contained']),
   color: PropTypes.oneOf(['default', 'inherit', 'primary', 'secondary']),
