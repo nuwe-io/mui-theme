@@ -10,7 +10,7 @@
     "predeploy": "npm run build-storybook",
     "build-storybook": "build-storybook -c .storybook -o public",
     "build-lib": "rollup -c",
-    
+    "chromatic": "npx chromatic --project-token=fb88c8d0b56c"
   },
   "repository": {
     "type": "git",
