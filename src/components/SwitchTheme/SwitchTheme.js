@@ -1,6 +1,6 @@
 import React from 'react'
 import MuiProvider from '../../Provider'
-import { Dark, Light } from '../../../theme'
+import { Dark, Light } from '../../theme'
 import { PropTypes } from 'prop-types'
 import { useTheme } from '../../hook'
 import SwitchThemeView from './SwitchTheme.jsx'

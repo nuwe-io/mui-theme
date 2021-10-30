@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Light, Dark } from '../../theme'
+import { Light, Dark } from '../theme'
 
 export const useTheme = () => {
   const [theme, setTheme] = useState(Dark)
