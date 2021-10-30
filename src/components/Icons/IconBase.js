@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types'
 
 const IconBase = (props) => {
   return (
-    <svg width={props.width} height={props.heigth} viewBox={props.viewBox}>
+    <svg aria-label="svgIcon" width={props.width} height={props.heigth} viewBox={props.viewBox}>
       <g fill={props.color}>{props.children}</g>
     </svg>
   )

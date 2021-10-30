@@ -11,7 +11,7 @@ import { PropTypes } from 'prop-types'
 const SwitchThemeView = ({ iconColor, iconWidth, color, theme, handlerTheme, variant }) => {
   return (
     <div>
-      <Button color={color} variant={variant} onClick={handlerTheme}>
+      <Button aria-label="switchButton" color={color} variant={variant} onClick={handlerTheme}>
         {theme?.palette?.type === 'dark' ? (
           <IconSun width={iconWidth} color={iconColor} />
         ) : (
