@@ -4,9 +4,10 @@ import { Light, Dark } from '../theme'
 export const useTheme = () => {
   const [theme, setTheme] = useState(Dark)
 
-  const handlerChangeTheme = (newTheme, type) => {
+  const handlerChangeTheme = (newTheme, type, reload) => {
     setTheme(newTheme)
     window.localStorage.setItem('theme', type)
+    reload()
   }
 
   useEffect(() => {
