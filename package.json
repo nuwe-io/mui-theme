@@ -1,6 +1,6 @@
 {
   "name": "@nuwe/mui-theme",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "MaterialUI 4 theme switcher and provider",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

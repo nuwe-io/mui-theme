@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider, StylesProvider } from '@material-ui/core'
+import { ThemeProvider, StylesProvider, CssBaseline } from '@material-ui/core'
 import { PropTypes } from 'prop-types'
 import { useTheme } from '../../hook'
 
@@ -8,7 +8,10 @@ const MuiProvider = (props) => {
 
   return (
     <StylesProvider>
-      <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {props.children}
+      </ThemeProvider>
     </StylesProvider>
   )
 }
