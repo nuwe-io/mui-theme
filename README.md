@@ -2,7 +2,6 @@
 
 MaterialUI 4 theme switcher and provider
 
-![GitHub](https://img.shields.io/github/license/nuwe-io/mui-theme)
 ![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 ![Coverage](coverage-badge.svg)
 
