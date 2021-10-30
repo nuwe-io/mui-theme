@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider, StylesProvider, CssBaseline } from '@material-ui/core'
 import { PropTypes } from 'prop-types'
-import { useTheme } from '../../hook'
+import { useTheme } from '../hook'
 import './style.css'
 
 const MuiProvider = (props) => {

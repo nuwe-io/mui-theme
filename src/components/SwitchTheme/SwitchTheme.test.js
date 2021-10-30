@@ -1,12 +1,14 @@
 /* eslint-disable no-undef */
 import React from 'react'
 import '@testing-library/jest-dom'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, prettyDOM, render } from '@testing-library/react'
 import SwitchThemeView from './SwitchTheme.jsx'
 
-describe('<SwitchTheme />', () => {
+describe('<SwitchThemeView />', () => {
   let component
   const mockHandleTheme = jest.fn()
+
+  // Mocking the useTheme hook
   const theme = jest.mock('../../hook', () => {
     return { useTheme: jest.fn(() => ({ handleTheme: mockHandleTheme })) }
   })

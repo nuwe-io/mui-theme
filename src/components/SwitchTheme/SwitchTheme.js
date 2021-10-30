@@ -1,16 +1,10 @@
 import React from 'react'
-import MuiProvider from '../Provider'
-import { Dark, Light } from '../../theme'
+import MuiProvider from '../../Provider'
+import { Dark, Light } from '../../../theme'
 import { PropTypes } from 'prop-types'
 import { useTheme } from '../../hook'
 import SwitchThemeView from './SwitchTheme.jsx'
-
-/**
- * React version of reaload a page
- * @param {*} toReload
- * @returns
- */
-const reloadWindow = (toReload) => window.location.reload(toReload)
+import { reloadWindow } from '../../utils'
 
 /**
  * Toggle switch theme button
@@ -18,6 +12,7 @@ const reloadWindow = (toReload) => window.location.reload(toReload)
  */
 const SwitchTheme = ({ iconColor, iconWidth, color, variant, reload, hasToReload }) => {
   const { theme, handlerChangeTheme } = useTheme()
+
   const handlerTheme = () => {
     if (theme?.palette?.type === 'dark') {
       handlerChangeTheme(Light, 'light', reload(hasToReload))
@@ -29,6 +24,7 @@ const SwitchTheme = ({ iconColor, iconWidth, color, variant, reload, hasToReload
   return (
     <MuiProvider>
       <SwitchThemeView
+        aria-label="switchButton"
         variant={variant}
         iconColor={iconColor}
         iconWidth={iconWidth}

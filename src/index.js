@@ -1,2 +1,4 @@
 export { useTheme } from './hook'
-export { SwitchTheme, MuiProvider } from './components'
+export { Dark, Light } from './theme'
+export { SwitchTheme } from './components'
+export { default as MuiProvider } from './Provider'

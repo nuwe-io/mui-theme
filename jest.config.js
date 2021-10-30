@@ -5,6 +5,7 @@ module.exports = {
   // User jsdom for testing DOM manipulation
   testEnvironment: 'jsdom',
   collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.js'],
   coverageDirectory: 'coverage',
   // add text-summary for shorter jest output
   coverageReporters: ['clover', 'json', 'lcov', 'text'],
