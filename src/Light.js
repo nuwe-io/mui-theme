@@ -67,8 +67,8 @@ const Light = {
       dark: '#384085'
     },
     background: {
-      default: '#14151F',
-      paper: '#1C1D2B'
+      default: '#F5F5F5',
+      paper: '#FFFFFF'
     },
     info: {
       main: '#E1E2E7',
