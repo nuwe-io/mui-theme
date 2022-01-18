@@ -31,7 +31,8 @@ const Dark = {
         borderRadius: '5px',
         transition: 'all ease .3s',
         '&:hover': {
-          transform: 'translateY(-5px)'
+          transform: 'translateY(-5px)',
+          backgroundColor: '#384085'
         }
       },
       contained: {
