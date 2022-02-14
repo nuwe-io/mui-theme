@@ -1,6 +1,6 @@
 const { ElevationConfig, TypographyConfig } = require('./General')
 
-const Dark = (type = 'type') => ({
+const Dark = {
   overrides: {
     MuiDialog: {
       root: {
@@ -44,7 +44,7 @@ const Dark = (type = 'type') => ({
     }
   },
   palette: {
-    [type]: 'dark',
+    type: 'dark',
     divider: '#8B979D',
     accent: '#404560',
     common: {
@@ -99,6 +99,6 @@ const Dark = (type = 'type') => ({
   shape: {
     borderRadius: 5
   }
-})
+}
 
 module.exports = { Dark }

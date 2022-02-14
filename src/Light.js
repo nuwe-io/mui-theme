@@ -1,6 +1,6 @@
 const { ElevationConfig, TypographyConfig } = require('./General')
 
-const Light = (type = 'type') => ({
+const Light = {
   overrides: {
     MuiDialog: {
       root: {
@@ -45,7 +45,7 @@ const Light = (type = 'type') => ({
     }
   },
   palette: {
-    [type]: 'light',
+    type: 'light',
     divider: '#8B979D',
     common: {
       black: '#14151F',
@@ -99,6 +99,6 @@ const Light = (type = 'type') => ({
   shape: {
     borderRadius: 5
   }
-})
+}
 
 module.exports = { Light }

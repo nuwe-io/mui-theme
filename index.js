@@ -1,4 +1,4 @@
 const { Dark, Light } = require('./src')
-const themeMode = { dark: (type) => Dark(type), light: (type) => Light(type) }
+const themeMode = { dark: Dark, light: Light }
 
 module.exports = themeMode
