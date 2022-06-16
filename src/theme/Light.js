@@ -32,6 +32,7 @@ let theme = createTheme({
       root: {
         borderRadius: '5px',
         transition: 'all ease .3s',
+        backgroundColor: colors.main.primary,
         '&:hover': {
           transform: 'translateY(-5px)'
         }
@@ -45,6 +46,7 @@ let theme = createTheme({
     }
   },
   palette: {
+    type: 'light',
     common: {
       black: colors.dark.background,
       white: colors.light.background
@@ -53,8 +55,8 @@ let theme = createTheme({
       primary: colors.dark.background,
       secondary: colors.light.background
     },
-    divider: colors.div,
-    type: 'light',
+    divider: colors.divider,
+
     primary: {
       light: colors.primary.light,
       main: colors.primary.main,
@@ -75,7 +77,7 @@ let theme = createTheme({
     }
   },
   typography: {
-    htmlFontSize: 18,
+    htmlFontSize: 16,
     ...TypographyConfig
   },
   props: {

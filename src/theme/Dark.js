@@ -33,6 +33,7 @@ let theme = createTheme({
       root: {
         borderRadius: '5px',
         transition: 'all ease .3s',
+        backgroundColor: '#5EBF0D',
         '&:hover': {
           transform: 'translateY(-5px)'
         }
@@ -46,37 +47,38 @@ let theme = createTheme({
     }
   },
   palette: {
+    type: 'dark',
     common: {
-      black: '#1B1D29',
-      white: '#EEEEEE'
+      black: '#000000',
+      white: '#ffffff'
     },
     text: {
       primary: '#FFF',
       secondary: '#B5B5B5'
     },
-    divider: '#8B979DA6',
-    type: 'dark',
+    divider: '#404560',
     contrast: {
       main: '#6772E5'
     },
     primary: {
-      light: '#4F934A',
-      main: '#569B51',
-      dark: '#4F934A'
+      light: '#9FE763',
+      main: '#5EBF0D',
+      dark: '#407D3C',
+      contrastText: '#fff'
     },
     secondary: {
-      light: '#FFF',
-      main: '#FCFCFC',
-      dark: '#CDCDCD'
+      light: '#A1AAFC',
+      main: '#6772E5',
+      dark: '#384085'
     },
     background: {
-      default: '#14151F',
+      default: '#0E0F16',
       paper: '#1C1D2B',
       border: '#404560'
     }
   },
   typography: {
-    htmlFontSize: 18,
+    htmlFontSize: 16,
     ...TypographyConfig
   },
   props: {
