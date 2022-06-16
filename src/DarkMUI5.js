@@ -1,4 +1,4 @@
-const { ElevationConfig, TypographyConfig } = require('./General')
+import { ElevationConfig, TypographyConfig } from './General'
 
 const DarkV5 = createThemeV5({
   components: {

@@ -1,9 +1,6 @@
 # MaterialUI theme switcher
 
-MaterialUI 4 theme switcher and provider
-
-![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
-![Coverage](coverage-badge.svg)
+MaterialUI 4 theme config files
 
 ## Install the package
 
@@ -27,35 +24,16 @@ npm install
 
 ## Usage
 
-- Running locally:
+```js
+import themeMode from "@nuwe/mui-theme";
+import { createTheme } from "@material-ui/core";
 
-```shell
-    npm run storybook
-```
-
-## Deploy & public to NPM & Chromatic
-
-CD/CI setup with vercel
-
-Deplopy and managed with [storybook](https://storybook.js.org) & [chromatic](https://chromatic.com)
-
-### 1 Publish and check with chromatic
-
-- For publishing the library to chromatic:
-
-```shell
-    npm run chromatic # Publish Storybook and run visual tests
+const theme = createTheme(themeMode["dark"]);
 ```
 
 ### 2 Update npm package
 
 Checkout to the MAIN branch and modify the version of the package version
-
-Build with rollup:
-
-```shell
-    npm run build-lib
-```
 
 After that login and push to npm
 

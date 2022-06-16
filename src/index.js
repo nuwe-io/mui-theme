@@ -1,4 +1,4 @@
-export { useTheme } from './hook'
-export { Dark, Light } from './theme'
-export { SwitchTheme } from './components'
-export { default as MuiProvider } from './Provider'
+const { Light } = require('./Light')
+const { Dark } = require('./Dark')
+
+module.exports = { Dark, Light }

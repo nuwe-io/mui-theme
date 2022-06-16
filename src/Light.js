@@ -1,6 +1,6 @@
-import { ElevationConfig, TypographyConfig } from './Components'
+import { ElevationConfig, TypographyConfig } from './General'
 import { createTheme, responsiveFontSizes } from '@material-ui/core'
-import colors from './Colors.json'
+import colors from './theme/Colors.json'
 
 let theme = createTheme({
   overrides: {
