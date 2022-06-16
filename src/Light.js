@@ -32,8 +32,7 @@ const Light = {
         borderRadius: '5px',
         transition: 'all ease .3s',
         '&:hover': {
-          transform: 'translateY(-5px)',
-          backgroundColor: '#384085'
+          transform: 'translateY(-5px)'
         }
       },
       contained: {
@@ -48,8 +47,8 @@ const Light = {
     type: 'light',
     divider: '#8B979D',
     common: {
-      black: '#14151F',
-      white: '#F5F5F5'
+      black: '#000000',
+      white: '#ffffff'
     },
     text: {
       primary: '#14151F',
@@ -58,9 +57,9 @@ const Light = {
       hint: '#ACAEBC'
     },
     primary: {
-      light: '#A1AAFC',
-      main: '#569B51',
-      dark: '#384085'
+      light: '#9FE763',
+      main: '#5EBF0D',
+      dark: '#407D3C'
     },
     secondary: {
       light: '#A1AAFC',
