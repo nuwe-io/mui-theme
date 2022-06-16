@@ -1,23 +1,20 @@
-import { createTheme, responsiveFontSizes } from '@material-ui/core'
-import { ElevationConfig, TypographyConfig } from './Components'
+const { ElevationConfig, TypographyConfig } = require('./General')
 
-const dialogBgColor = '#1C1D2B'
-
-let theme = createTheme({
+const Dark = {
   overrides: {
     MuiDialog: {
       root: {
-        backgroundColor: dialogBgColor
+        backgroundColor: '#1C1D2B'
       }
     },
     MuiTooltip: {
       tooltip: {
         backgroundColor: '#1C1D2B',
-        color: '#F0F0F0',
+        color: '#F5F5F5',
         fontSize: 16
       },
       arrow: {
-        color: '#1C1D2B'
+        color: '#404560'
       }
     },
     MuiPaper: {
@@ -33,7 +30,6 @@ let theme = createTheme({
       root: {
         borderRadius: '5px',
         transition: 'all ease .3s',
-        backgroundColor: '#5EBF0D',
         '&:hover': {
           transform: 'translateY(-5px)'
         }
@@ -48,23 +44,21 @@ let theme = createTheme({
   },
   palette: {
     type: 'dark',
+    divider: '#8B979D',
     common: {
       black: '#000000',
       white: '#ffffff'
     },
     text: {
-      primary: '#FFF',
-      secondary: '#B5B5B5'
-    },
-    divider: '#404560',
-    contrast: {
-      main: '#6772E5'
+      primary: '#F5F5F5',
+      secondary: '#D4D4D6',
+      disabled: '#B6B6BA',
+      hint: '#8B8B92'
     },
     primary: {
       light: '#9FE763',
       main: '#5EBF0D',
-      dark: '#407D3C',
-      contrastText: '#fff'
+      dark: '#407D3C'
     },
     secondary: {
       light: '#A1AAFC',
@@ -73,12 +67,15 @@ let theme = createTheme({
     },
     background: {
       default: '#0E0F16',
-      paper: '#1C1D2B',
-      border: '#404560'
+      paper: '#1C1D2B'
+    },
+    info: {
+      main: '#404560',
+      contrastText: '#404560'
     }
   },
   typography: {
-    htmlFontSize: 16,
+    htmlFontSize: 18,
     ...TypographyConfig
   },
   props: {
@@ -100,8 +97,7 @@ let theme = createTheme({
   shape: {
     borderRadius: 5
   }
-})
+}
 
-theme = responsiveFontSizes(theme)
+module.exports = { Dark }
 
-export default theme

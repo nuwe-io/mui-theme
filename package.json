@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/nuwe-io/mui-theme/issues"
   },
-  "homepage": "https://github.com/nuwe-io/mui-theme#readme"
+  "homepage": "https://github.com/nuwe-io/mui-theme#readme",
+  "dependencies": {
+    "login": "^0.8.0"
+  }
 }

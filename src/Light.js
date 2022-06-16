@@ -1,30 +1,29 @@
-import { ElevationConfig, TypographyConfig } from './General'
-import { createTheme, responsiveFontSizes } from '@material-ui/core'
-import colors from './theme/Colors.json'
+const { ElevationConfig, TypographyConfig } = require('./General')
 
-let theme = createTheme({
+const Light = {
   overrides: {
     MuiDialog: {
       root: {
-        backgroundColor: colors.light.background
+        backgroundColor: '#FFFFF',
+        color: '#14151F'
       }
     },
     MuiTooltip: {
       tooltip: {
-        backgroundColor: colors.light.paper,
-        color: colors.dark.paper,
+        backgroundColor: '#FFFFFF',
+        color: '#14151F',
         fontSize: 16
       },
       arrow: {
-        color: colors.light.border
+        color: '#E1E2E7'
       }
     },
     MuiPaper: {
       root: {
-        border: `2px solid ${colors.light.border}`
+        border: '2px solid #E1E2E7'
       },
       outlined: {
-        border: `2px solid ${colors.light.border}`
+        border: '2px solid #E1E2E7'
       },
       ...ElevationConfig
     },
@@ -32,7 +31,6 @@ let theme = createTheme({
       root: {
         borderRadius: '5px',
         transition: 'all ease .3s',
-        backgroundColor: colors.main.primary,
         '&:hover': {
           transform: 'translateY(-5px)'
         }
@@ -47,37 +45,38 @@ let theme = createTheme({
   },
   palette: {
     type: 'light',
+    divider: '#8B979D',
     common: {
-      black: colors.dark.background,
-      white: colors.light.background
+      black: '#000000',
+      white: '#ffffff'
     },
     text: {
-      primary: colors.dark.background,
-      secondary: colors.light.background
+      primary: '#14151F',
+      secondary: '#2D2F47',
+      disabled: '#6B6C78',
+      hint: '#ACAEBC'
     },
-    divider: colors.divider,
-
     primary: {
-      light: colors.primary.light,
-      main: colors.primary.main,
-      dark: colors.primary.dark
+      light: '#9FE763',
+      main: '#5EBF0D',
+      dark: '#407D3C'
     },
     secondary: {
-      light: colors.dark.border,
-      main: colors.dark.paper,
-      dark: colors.dark.background
-    },
-    info: {
-      main: colors.info.main,
-      dark: colors.info.dark
+      light: '#A1AAFC',
+      main: '#6772E5',
+      dark: '#384085'
     },
     background: {
-      default: colors.light.paper,
-      paper: colors.light.background
+      default: '#F5F5F5',
+      paper: '#FFFFFF'
+    },
+    info: {
+      main: '#E1E2E7',
+      contrastText: '#404560'
     }
   },
   typography: {
-    htmlFontSize: 16,
+    htmlFontSize: 18,
     ...TypographyConfig
   },
   props: {
@@ -99,8 +98,6 @@ let theme = createTheme({
   shape: {
     borderRadius: 5
   }
-})
+}
 
-theme = responsiveFontSizes(theme)
-
-export default theme
+module.exports = { Light }
